@@ -6,6 +6,9 @@ from scipy.stats import norm
 mu = 160    # Mean height in cm
 sigma = 7   # Typical standard deviation for height
 
+print(norm.pdf(0))
+print(norm.cdf(0))
+
 # Range: Generate values for the x-axis (from -4 to +4 standard deviations)
 x = np.linspace(mu - 4*sigma, mu + 4*sigma, 500)
 
