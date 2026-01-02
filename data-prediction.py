@@ -35,3 +35,20 @@ print()
 print('###############################')
 print("Random forest correlation")
 print(rf_importance)
+
+
+df.plot(
+    kind='scatter',
+    x='temperature',
+    y='energy_output',
+    title='Temperature vs Energy Output',
+    grid=True
+)
+
+plt.figure()
+plt.scatter(df['temperature'], df['energy_output'])
+plt.xlabel('Temperature')
+plt.ylabel('Energy Output')
+plt.title('Temperature vs Energy Output')
+plt.grid(True)
+plt.show()
